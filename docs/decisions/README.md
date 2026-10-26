@@ -28,3 +28,4 @@ What becomes easier or harder because of this choice.
 | # | Decision | Status |
 |---|---|---|
 | [0001](0001-rebuild-as-custom-full-stack-app.md) | Rebuild the site as a custom full-stack application | Accepted |
+| [0002](0002-tech-stack-python-backend-react-frontend.md) | Python backend, TypeScript/React frontend | Accepted |
