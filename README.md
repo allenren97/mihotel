@@ -22,6 +22,7 @@ It is also a learning project. I'm a data engineer learning full-stack developme
 
 ## Where to start reading
 
-1. [Journal](docs/journal/) for the story in order
-2. [Decisions](docs/decisions/) for why things are the way they are
-3. [Learning notes](docs/learning/) for the concepts behind them
+1. [Roadmap](docs/roadmap.md) for the plan
+2. [Journal](docs/journal/) for the story in order
+3. [Decisions](docs/decisions/) for why things are the way they are
+4. [Learning notes](docs/learning/) for the concepts behind them
