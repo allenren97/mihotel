@@ -48,5 +48,6 @@ Grooming:
 5. **Suite sizes:** only Luxury Plus has a size listed.
 6. **Booking:** the Google Form takes visitors off the site, can't check availability, and has no confirmation flow.
 7. **Typo:** the Single Suite description says "accomondate".
+8. **No custom favicon:** the browser-tab icon is Wix's default (`static.parastorage.com/client/pfavico.ico`), so tabs and bookmarks show a generic Wix logo instead of MiHotel's. Found with `curl -sL www.mi-hotel.ca | head -20` on 2026-10-26.
 
 These gaps are inputs for the rebuild. The booking system in particular is the main functional upgrade.
