@@ -28,6 +28,18 @@ GET /admin/bookings  Cookie: session_id=abc123 → server looks up abc123 → "o
 
 > **Data analogy:** the cookie is a **foreign key**. The browser holds an opaque ID, and the real data lives in a server-side `sessions` table. Each request effectively runs `SELECT ... FROM sessions WHERE id = :cookie`.
 
+## Where cookies live
+
+Cookies are stored by the **browser, on the user's machine**. The server only asks the browser to store one.
+
+- Chrome on macOS keeps them in `~/Library/Application Support/Google/Chrome/Default/Cookies`, which is a **SQLite database** with a `cookies` table (`host_key`, `name`, `value` (encrypted), `expires_utc`, `is_httponly`, ...).
+- Session cookies (no expiry) often live only in memory.
+- They're separate for each browser, profile and device. Incognito windows start empty.
+- "Clear cookies" deletes the rows, which logs you out.
+- There's a limit of about 4 KB per cookie, and every matching request carries them.
+
+**Rule: never trust cookie contents.** Users can view and edit their own cookies in dev tools. A cookie like `role=admin` could be forged in seconds. So store only an unguessable random ID, and keep the meaning (who, role, logged-in status) in the server's database.
+
 ## Attributes
 
 | Attribute | Effect | Protects against |
