@@ -63,6 +63,29 @@ A real example seen on mi-hotel.ca (Cloudflare's bot detection):
 
 The admin login (Week 9) will use a session cookie with `HttpOnly; Secure; SameSite=Lax`. The alternative is tokens (JWTs), and that choice will get its own decision record when we reach it.
 
+## Worked example (httpbin.org)
+
+```bash
+# 1. Server sets it:  set-cookie: favourite_cat=mochi; Path=/
+curl -sS -i "https://httpbin.org/cookies/set?favourite_cat=mochi" -c jar.txt
+
+# 2. Client stores it (curl's jar; tab-separated, like Chrome's SQLite table)
+#    domain       subdomains  path  secure  expires  name           value
+#    httpbin.org  FALSE       /     FALSE   0        favourite_cat  mochi
+cat jar.txt
+
+# 3. Client sends it back automatically:  Cookie: favourite_cat=mochi
+curl -sS https://httpbin.org/cookies -b jar.txt
+# → {"cookies": {"favourite_cat": "mochi"}}
+
+# 4. Forgery: the server accepts whatever the client sends
+curl -sS https://httpbin.org/cookies -b "favourite_cat=garfield; role=admin"
+# → {"cookies": {"favourite_cat": "garfield", "role": "admin"}}
+```
+
+`-c` saves cookies to a file, and `-b` sends cookies from a file or a string. Step 4 is the whole reason cookie contents must never be trusted.
+
 ## Try it
 
-Chrome dev tools → **Application** → **Cookies** → pick the site.
+- Terminal: the commands above.
+- Browser: visit `https://httpbin.org/cookies/set?favourite_cat=mochi`, then open dev tools → **Application** → **Cookies**. Edit the value and reload; the server believes the edited value.
