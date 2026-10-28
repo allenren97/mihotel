@@ -9,6 +9,7 @@ Background: I'm a data engineer. I'm comfortable with SQL, data pipelines and Py
 Notes are grouped by topic as they are added.
 
 - **Web fundamentals:** [Cookies](web/cookies.md): why HTTP needs them, how Set-Cookie/Cookie work, security attributes
+  - [HTTP vs. HTTPS](web/http-vs-https.md): TLS, certificates, Let's Encrypt, the handshake
 - **Networking:** [IP addresses](networking/ip-addresses.md): public vs. private, NAT, ports
 - **Frontend:** none yet
 - **Backend:** none yet
