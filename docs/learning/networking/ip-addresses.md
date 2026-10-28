@@ -84,7 +84,7 @@ An IP gets data to the right **machine**. A **port** (0 to 65535) gets it to the
 ## Why it matters for this project
 
 - A machine behind a home or hotel router has only a private IP, so the internet can't reach it. That's why the app will be hosted with a cloud provider (Week 6) instead of on a computer at the hotel.
-- DNS records (see `how-the-web-works.md`, coming up) map `mi-hotel.ca` to a public IP. Moving the site off Wix means changing those records.
+- DNS records (see [how-the-web-works.md](../web/how-the-web-works.md)) map `mi-hotel.ca` to a public IP. Moving the site off Wix means changing those records.
 
 ## Try it
 
