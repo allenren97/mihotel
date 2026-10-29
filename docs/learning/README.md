@@ -13,6 +13,7 @@ Notes are grouped by topic as they are added.
   - [Cookies](web/cookies.md): why HTTP needs them, how Set-Cookie/Cookie work, security attributes
   - [HTTP vs. HTTPS](web/http-vs-https.md): TLS, certificates, Let's Encrypt, the handshake
 - **Networking:** [IP addresses](networking/ip-addresses.md): public vs. private, NAT, ports
+- **Git and GitHub:** [Git and GitHub](git/git-and-github.md): staging, diffs, branches, remotes, the PR workflow, merge strategies, the gh CLI
 - **Frontend:** none yet
 - **Backend:** none yet
 - **Databases:** none yet

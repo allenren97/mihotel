@@ -29,3 +29,4 @@ What becomes easier or harder because of this choice.
 |---|---|---|
 | [0001](0001-rebuild-as-custom-full-stack-app.md) | Rebuild the site as a custom full-stack application | Accepted |
 | [0002](0002-tech-stack-python-backend-react-frontend.md) | Python backend, TypeScript/React frontend | Accepted |
+| [0003](0003-git-workflow.md) | Git workflow: GitHub Flow, typed branches, Conventional Commits, squash merges | Accepted |
