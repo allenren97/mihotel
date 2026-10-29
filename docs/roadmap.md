@@ -34,8 +34,8 @@ Only the current week is planned day by day. Later weeks have a goal and a "done
 | Day | Focus | Hands-on | Status |
 |---|---|---|---|
 | 1 | How the web works | Inspect mi-hotel.ca with dev tools and the terminal. First learning note. | ✅ Done (dev tools exercise carried to Day 6) |
-| 2 | Git and GitHub | Create the GitHub repo and push. Branches and pull requests. | Next |
-| 3 | HTML and CSS | Hand-build a static "Luxury Suite" card. | |
+| 2 | Git and GitHub | Create the GitHub repo and push. Branches and pull requests. | ✅ Done |
+| 3 | HTML and CSS | Hand-build a static "Luxury Suite" card. | Next |
 | 4 | JavaScript for Python developers | Translate Python snippets into JavaScript. | |
 | 5 | Docker | Run Postgres in a container and connect with `psql`. | |
 | 6 | Review | Journal, learning notes, quiz. | |
