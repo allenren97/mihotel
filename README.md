@@ -8,7 +8,7 @@ It is also a learning project. I'm a data engineer learning full-stack developme
 
 ## Status
 
-**Planning phase.** No application code yet.
+**Planning phase.** Finished day one understand the basic concepts of networks, http, https, cookies DNS, IP address
 
 ## Repository layout
 
